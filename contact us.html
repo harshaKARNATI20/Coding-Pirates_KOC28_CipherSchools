@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<title>Contact us - INDIAN RAILWAYS</title>
+<link href="contact us.css" rel="stylesheet">
+
+<style>
+Body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: BLUE;
+}
+ form { 
+        border: 3px solid white; 
+    } 
+ input[type=text], input[type=email], textarea { 
+        width: 100%; 
+        margin: 8px 0;
+        padding: 12px 20px; 
+        display: inline-block; 
+        border: 5px=BLACK; 
+        box-sizing: border-box; 
+    }
+input[type=radio]{
+ width: 10%; 
+        margin: 8px 0;
+        padding: 12px 20px; 
+        display: inline-block; 
+        box-sizing: border-box; 
+}
+
+input[type=button], button{
+ width: 140px;
+  margin:40px 60px;
+  color: blue;
+  font-size: 14px;
+  border:2px=BLACK;
+  font-weight: 1000;
+ background-color: LIME;
+  border-radius: 50px;
+  padding: 10px;
+  transition: .2s;
+}
+ input[type=button]:hover { 
+  border-radius: 0;
+    } 
+ button:hover { 
+  border-radius: 0;
+    } 
+ 
+ .container { 
+        padding: 25px; 
+        background-color: AQUA;
+ text-align: center;
+    } 
+
+#button_open_envelope{
+	width: 180px;
+	height: 30px;
+	position: absolute;
+	z-index: 311;
+	top: 684px;
+	left: 184px;
+	border-radius: 10px;
+	color: LIME;
+	font-size: 18px;
+                 text-align: center;
+	padding:15px 0; 
+	border: 2px solid white;
+	transition:.3s;
+                 background: lightblue;
+}
+#button_open_envelope:hover{
+	background: white;
+	transform:scale(1.1);
+	transition:background .25s, transform .5s,ease-in;
+	cursor: pointer;
+}
+
+</style>
+
+</head>
+<body>
+<form action="mailto:harshavardhanhasty@gmail.com"
+method="POST"
+enctype="multipart/form-data"
+name="EmailForm">
+<div class="container"> 
+   <h1 align="center"><b><i>CONTACT US </i></b> </h1>
+
+<p align="center">Name:<input type="text" name="Name" required></p>
+   
+<p align="center">
+<label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email" required>
+</p>
+
+<p align="center">
+Gender:
+<input type="radio" name="gender" value="male" required>Male
+<input type="radio" name="gender" value="Female" required>Female
+<input type="radio" name="gender" value="others" required>others
+</p>
+
+<p align="center">Enter your message here:<br><textarea rows="4" cols="50" name="comment" required>
+</textarea><br><br></p>
+
+<button type="submit" value="Submit">Send</button>
+<input type="button" value="Reload page">
+</div> 
+</form>
+<div id = "button_open_envelope""><a href="index.html">
+				Return to home page
+			</div>
+</body>
+</html>
